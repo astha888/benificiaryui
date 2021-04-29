@@ -1,0 +1,42 @@
+<h3>
+    Create Benificiary</h3>
+<div [hidden]="submitted" style="width: 400px;">
+    <form (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+            <label for="name">Benificiary Id</label>
+            <input type="text" class="form-control" id="id" required [(ngModel)]="benificiary.benifId" name="id">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" required [(ngModel)]="benificiary.name" name="name">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Account number</label>
+            <input type="text" class="form-control" id="accno" required [(ngModel)]="benificiary.accountNo" name="accno">
+        </div>
+        <div class="form-group">
+            <label for="name">Bank Name</label>
+            <input type="text" class="form-control" id="bname" required [(ngModel)]="benificiary.bankName" name="bname">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Branch Name</label>
+            <input type="text" class="form-control" id="branchname" required [(ngModel)]="benificiary.branchName" name="branchname">
+        </div>
+
+        <div class="form-group">
+            <label for="name">IFSC Code</label>
+            <input type="text" class="form-control" id="ifsccode" required [(ngModel)]="benificiary.ifscCode" name="ifsccode">
+        </div>
+
+        <div class="form-group">
+            <label for="name">NickName</label>
+            <input type="text" class="form-control" id="nickname" required [(ngModel)]="benificiary.nickname" name="nickname">
+        </div>
+
+        <button class="btn btn-success">Submit</button>
+    </form>
+</div>

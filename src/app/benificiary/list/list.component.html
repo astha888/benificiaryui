@@ -1,0 +1,34 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h2>Benificiary List</h2>
+    </div>
+    <div class="panel-body">
+        <table id="example" class="table table-striped table-bordered table-sm row-border hover" cellspacing="0" width="100%">
+
+            <thead>
+                <tr>
+                    <th>Benificiary Id</th>
+                    <th>Name</th>
+                    <th>Account Number</th>
+                    <th>Bank Name</th>
+                    <th>Branch Name</th>
+                    <th>Ifsc Code</th>
+                    <th>Nickname</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let benif of benificiaries | async">
+                    <td>{{benificiary.benifId}}</td>
+                    <td>{{benificiary.name}}</td>
+                    <td>{{benificiary.accountNo}}</td>
+                    <td>{{benificiary.bankName}}</td>
+                    <td>{{benificiary.branchName}}</td>
+                    <td>{{benificiary.ifcsCode}}</td>
+                    <td>{{benificiary.nickname}}</td>
+
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
